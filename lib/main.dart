@@ -19,6 +19,14 @@ class MyApp extends StatelessWidget {
                 radius: 50.0,
                 backgroundImage: AssetImage('images/soumik.jpg'),
               ),
+              Text(
+                'Soumik Mukherjee',
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 40.0,
+                  color: Colors.white,
+                ),
+              ),
             ],
           ),
         ),
