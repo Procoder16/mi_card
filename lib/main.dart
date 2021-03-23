@@ -12,6 +12,14 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
+        appBar: AppBar(
+          centerTitle: true,
+          title: Text(
+            'My Business Card',
+            style: TextStyle(color: Colors.white, fontSize: 25.0),
+          ),
+          backgroundColor: Colors.teal[900],
+        ),
         backgroundColor: Colors.teal,
         body: SafeArea(
           child: Column(
@@ -40,23 +48,30 @@ class MyApp extends StatelessWidget {
                   color: Colors.teal[100],
                 ),
               ),
-              Card(
-                  margin:
-                      EdgeInsets.symmetric(vertical: 50.0, horizontal: 30.0),
-                  child: ListTile(
-                    //contentPadding: EdgeInsets.only(right: 20.0),
-                    leading: Icon(
-                      Icons.phone,
-                      size: 30.0,
-                      color: Colors.teal[900],
-                    ),
-                    trailing: Text(
-                      '+91 9876543210',
-                      style: TextStyle(color: Colors.teal[900], fontSize: 25.0),
-                    ),
-                  )),
+              SizedBox(
+                height: 30.0,
+                width: 280.0,
+                child: Divider(
+                  color: Colors.teal[100],
+                  thickness: 1.5,
+                ),
+              ),
               Card(
                 margin: EdgeInsets.symmetric(vertical: 0.0, horizontal: 30.0),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.phone,
+                    size: 30.0,
+                    color: Colors.teal[900],
+                  ),
+                  trailing: Text(
+                    '+91 9876543210',
+                    style: TextStyle(color: Colors.teal[900], fontSize: 30.0),
+                  ),
+                ),
+              ),
+              Card(
+                margin: EdgeInsets.symmetric(vertical: 30.0, horizontal: 30.0),
                 child: ListTile(
                   leading: Icon(
                     Icons.mail_outline,
