@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.teal,
         body: SafeArea(
           child: Column(
-            //mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               CircleAvatar(
                 radius: 50.0,
@@ -39,46 +40,33 @@ class MyApp extends StatelessWidget {
                   color: Colors.teal[100],
                 ),
               ),
-              Container(
-                color: Colors.white,
-                margin: EdgeInsets.symmetric(vertical: 50.0, horizontal: 30.0),
-                padding: EdgeInsets.all(15.0),
-                child: Row(
-                  children: [
-                    Icon(
+              Card(
+                  margin:
+                      EdgeInsets.symmetric(vertical: 50.0, horizontal: 30.0),
+                  child: ListTile(
+                    //contentPadding: EdgeInsets.only(right: 20.0),
+                    leading: Icon(
                       Icons.phone,
                       size: 30.0,
                       color: Colors.teal[900],
                     ),
-                    SizedBox(
-                      width: 30.0,
-                    ),
-                    Text(
+                    trailing: Text(
                       '+91 9876543210',
                       style: TextStyle(color: Colors.teal[900], fontSize: 25.0),
-                    )
-                  ],
-                ),
-              ),
-              Container(
-                color: Colors.white,
+                    ),
+                  )),
+              Card(
                 margin: EdgeInsets.symmetric(vertical: 0.0, horizontal: 30.0),
-                padding: EdgeInsets.all(10.0),
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.mail_outline,
-                      color: Colors.teal[900],
-                      size: 30.0,
-                    ),
-                    SizedBox(
-                      width: 25.0,
-                    ),
-                    Text(
-                      'smsoumik1608@gmail.com',
-                      style: TextStyle(color: Colors.teal[900], fontSize: 20.0),
-                    ),
-                  ],
+                child: ListTile(
+                  leading: Icon(
+                    Icons.mail_outline,
+                    color: Colors.teal[900],
+                    size: 30.0,
+                  ),
+                  trailing: Text(
+                    'smsoumik1608@gmail.com',
+                    style: TextStyle(color: Colors.teal[900], fontSize: 20.0),
+                  ),
                 ),
               ),
             ],
