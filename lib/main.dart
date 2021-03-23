@@ -47,10 +47,11 @@ class MyApp extends StatelessWidget {
                   children: [
                     Icon(
                       Icons.phone,
+                      size: 30.0,
                       color: Colors.teal[900],
                     ),
                     SizedBox(
-                      width: 50.0,
+                      width: 30.0,
                     ),
                     Text(
                       '+91 9876543210',
@@ -59,7 +60,27 @@ class MyApp extends StatelessWidget {
                   ],
                 ),
               ),
-              Container(),
+              Container(
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(vertical: 0.0, horizontal: 30.0),
+                padding: EdgeInsets.all(10.0),
+                child: Row(
+                  children: [
+                    Icon(
+                      Icons.mail_outline,
+                      color: Colors.teal[900],
+                      size: 30.0,
+                    ),
+                    SizedBox(
+                      width: 25.0,
+                    ),
+                    Text(
+                      'smsoumik1608@gmail.com',
+                      style: TextStyle(color: Colors.teal[900], fontSize: 20.0),
+                    ),
+                  ],
+                ),
+              ),
             ],
           ),
         ),
