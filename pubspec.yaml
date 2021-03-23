@@ -24,5 +24,8 @@ flutter:
     - family: HennyPenny
       fonts:
         - asset: fonts/HennyPenny-Regular.ttf
+    - family: SourceSansPro
+      fonts:
+        - asset: fonts/SourceSansPro-Regular.ttf
 
 
